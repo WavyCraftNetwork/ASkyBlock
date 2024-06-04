@@ -1,6 +1,8 @@
 items-start: 
   - 'diamond_pickaxe' 
 
+items-start-customies: [] #Only use when you have installed customies on the virion
+
 chest-start-position:  #The location of the chest on the island.
   island: '256:70:252'
 
