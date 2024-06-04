@@ -3,6 +3,7 @@ api: 5.0.0
 main: BeeAZ\ASkyBlock\ASkyBlock
 version: 1.0.1
 author: BeeAZ
+upgrade: Di4rDev
 
 permissions:
   askyblock.command:
