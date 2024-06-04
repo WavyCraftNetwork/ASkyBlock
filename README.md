@@ -2,6 +2,10 @@
 
 # A SkyBlock plugin for PocketMine-MP
 
+## This fork supports many things
+- [x] Customies item
+- [ ] AntiHaste
+
 ## Features
 
 - [x] Unlimited custom islands can be added
