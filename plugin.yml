@@ -4,6 +4,7 @@ main: BeeAZ\ASkyBlock\ASkyBlock
 version: 1.0.1
 author: BeeAZ
 upgrade: Di4rDev
+depend: Customies
 
 permissions:
   askyblock.command:
