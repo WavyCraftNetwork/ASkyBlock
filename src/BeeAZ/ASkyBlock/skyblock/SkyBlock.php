@@ -13,6 +13,8 @@ use RuntimeException;
 use ErrorException;
 use pocketmine\block\tile\Chest;
 use pocketmine\item\StringToItemParser;
+use customiesdevs\customies\item\CustomiesItemFactory;
+
 
 class SkyBlock {
 
@@ -117,7 +119,7 @@ class SkyBlock {
     $world->loadChunk($ex[0], $ex[2]);
     $chest = $world->getTile(new Position($ex[0], $ex[1], $ex[2], $world));
     if ($chest instanceof Chest) {
-      $chest->setName($islandName . " Chest");
+      $chest->setName($islandName . " chest");
       foreach ($config->get("items-start") as $items) {
         if (strpos($items, ':')) {
           $items = explode(":", $items);
@@ -125,6 +127,10 @@ class SkyBlock {
           $items = [$items];
         }
         $item = StringToItemParser::getInstance()->parse($items[0])->setCount($items[1] ?? 1);
+        $chest->getInventory()->addItem($item);
+      }
+      foreach ($config->get("items-start-customies) as $customitems){
+        $item = CustomiesItemFactory::getInstance()->get($customitems);
         $chest->getInventory()->addItem($item);
       }
     }
