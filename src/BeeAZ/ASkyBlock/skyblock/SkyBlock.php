@@ -13,7 +13,7 @@ use RuntimeException;
 use ErrorException;
 use pocketmine\block\tile\Chest;
 use pocketmine\item\StringToItemParser;
-
+use customiesdevs\customies\item\CustomiesItemFactory;
 
 class SkyBlock {
 
@@ -129,7 +129,7 @@ class SkyBlock {
         $chest->getInventory()->addItem($item);
       }
       foreach ($config->get("items-start-customies") as $customitems){
-        $item = customiesdevs\customies\item\CustomiesItemFactory::getInstance()->get($customitems);
+        $item = CustomiesItemFactory::getInstance()->get($customitems);
         $chest->getInventory()->addItem($item);
       }
     }
