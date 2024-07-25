@@ -1,5 +1,12 @@
 items-start: 
-  - 'diamond_pickaxe' 
+  - 'lava_bucket'
+  - 'water_bucket'
+  - 'ice'
+  - 'seeds'
+  - 'pumpkin_seeds'
+  - 'melon_seeds'
+  - 'sugar_cane'
+  - 'oak_sapling'
 
 items-start-customies: [] 
 
@@ -9,4 +16,4 @@ chest-start-position:  #The location of the chest on the island.
 blocks:
   diamond_block: 5 #When the player places a block, points will be added to the island. When the player breaks a block, points will be deducted.
 
-language-file: vietnamese #Custom language plugin
+language-file: english #Custom language plugin
