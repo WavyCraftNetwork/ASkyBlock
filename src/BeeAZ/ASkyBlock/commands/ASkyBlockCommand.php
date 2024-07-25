@@ -12,7 +12,7 @@ use pocketmine\player\Player;
 class ASkyBlockCommand extends Command implements PluginOwned {
 
   public function __construct() {
-    parent::__construct("askyblock", "SkyBlock Command", null, ["skyblock", "sb", "is"]);
+    parent::__construct("skyblock", "SkyBlock menu", null, ["sb", "island", "is"]);
     $this->setPermission("askyblock.command");
   }
 
